@@ -28,6 +28,11 @@ namespace MvcMatricula.Controllers
             return View();
         }
 
+        public IActionResult Materia()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

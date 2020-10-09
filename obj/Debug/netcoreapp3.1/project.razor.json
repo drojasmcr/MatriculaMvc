@@ -14425,6 +14425,11 @@
       "FilePath": "/Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/Views/Materias/Index.cshtml",
+      "TargetPath": "Views\\Materias\\Index.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
