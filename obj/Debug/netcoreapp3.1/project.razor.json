@@ -14417,6 +14417,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/Views/Materia/Index.cshtml",
+      "TargetPath": "Views\\Materia\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -14424,11 +14429,6 @@
     {
       "FilePath": "/Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/Views/Materias/Index.cshtml",
-      "TargetPath": "Views\\Materias\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],
