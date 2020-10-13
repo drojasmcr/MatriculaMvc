@@ -8,5 +8,11 @@ namespace MvcMatricula.Data
         public DbSet<Materia> Materias {get;set;}
 
         string connectionString = @"Data Source=127.0.0.1,1433;Database=dbmatriculal;User Id=SA;Password=Alajuela200*";
+
+        public MatriculaDbContext(DbContextOptions<MatriculaDbContext> options)
+        :base(options)
+        {
+            
+        }
     }
 }
