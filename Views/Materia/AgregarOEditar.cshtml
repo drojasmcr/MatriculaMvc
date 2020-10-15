@@ -1,0 +1,23 @@
+@model Materia
+@{
+    
+}
+<h4>Agregar Materia</h4>
+
+<hr />
+
+<form asp-action="AgregarOEditar" method="POST">
+    <div class="form-group">
+        <label asp-for="CodigoMateria">Còdigo de Materia</label>
+        <input asp-for=CodigoMateria class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="NombreMateria">Nombre de Materia</label>
+        <input asp-for=NombreMateria class="form-control" />
+    </div>
+        <div class="form-group">
+        <label asp-for="HorasTotales">Horas Totales</label>
+        <input asp-for=HorasTotales class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

@@ -14417,6 +14417,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/Views/Materia/AgregarOEditar.cshtml",
+      "TargetPath": "Views\\Materia\\AgregarOEditar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/Views/Materia/Index.cshtml",
       "TargetPath": "Views\\Materia\\Index.cshtml",
       "FileKind": "mvc"

@@ -25,5 +25,20 @@ namespace MvcMatricula.Controllers
             return View(_materias.ToList());
         }
 
+        public IActionResult AgregarOEditar(int id = 0) 
+        {
+            if ( id == 0 )
+                return View(new Materia());
+            return View( Repositorio.ObtenerMateria(id) );
+        }
+        [HttpPost]
+        public IActionResult AgregarOEditar(Materia model) 
+        {
+            Repositorio.AgregarMateria(model);
+            Repositorio.Commit();
+            return View("Index",Repositorio.ObtenerMaterias().ToList());
+        }
+    
+
     }
 }

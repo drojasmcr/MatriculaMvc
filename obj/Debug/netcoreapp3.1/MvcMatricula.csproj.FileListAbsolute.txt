@@ -76,3 +76,5 @@
 /Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/obj/Debug/netcoreapp3.1/Razor/Views/Materia/Index.cshtml.g.cs
 /Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/bin/Debug/netcoreapp3.1/package-lock.json
+/Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/obj/Debug/netcoreapp3.1/Razor/Views/Materia/AgregarOEditar.cshtml.g.cs
