@@ -7,7 +7,7 @@ namespace MvcMatricula.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public MateriaController(ILogger<HomeController> logger)
+        public MateriaController(ILogger<HomeController> logger, IMatriculaRepositorio repositorio)
         {
             _logger = logger;
         }

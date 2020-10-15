@@ -29,6 +29,7 @@ namespace MvcMatricula
             {
                 options.UseSqlServer(Configuration.GetConnectionString("MatriculaDB"));
             });
+            services.AddScoped<IMatriculaRepositorio, MatriculaRepositorioSql>();
             services.AddControllersWithViews();
         }
 
