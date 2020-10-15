@@ -1,9 +1,40 @@
+@model List<Materia>
+
 @{
     ViewData["Title"] = "Materias";
 }
-<h1>@ViewData["Materia"]</h1>
 
-<p>Pagina de materias</p>
-<table class="table">
-    
-</table>
+<html>
+    <head>
+        <title>Materias disponibles</title>
+    </head>
+    <body>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor( model => model[0].CodigoMateria)
+                </th>
+                <th>
+                    @Html.DisplayNameFor( model => model[0].NombreMateria)
+                </th>
+                <th>
+                    @Html.DisplayNameFor( model => model[0].Horas_Totales)
+                </th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th>
+                        @item.CodigoMateria
+                    </th>
+                    <th>
+                        @item.NombreMateria
+                    </th>
+                    <th>
+                        @item.Horas_Totales
+                    </th>
+                </tr>
+            }
+        </table>
+    </body>
+</html>
