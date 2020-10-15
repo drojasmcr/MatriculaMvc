@@ -4,6 +4,7 @@ namespace MvcMatricula.Models
     {
         public int Id {get;set;}
         public string CodigoMateria {get;set;}
+        public string NombreMateria {get;set;}
         public int Creditos {get;set;}
         public bool EstaBorrado {get;set;}
     }

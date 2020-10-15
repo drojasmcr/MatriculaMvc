@@ -8,6 +8,7 @@ public interface IMatriculaData
     Materia AgregarMateria(Materia materia);
     Materia ActualizarMateria(Materia materia);
     Materia EliminarMateria( int id);
+    IEnumerable<Materia> ObtenerMaterias( string nombre);
     int Commit();
 
 }
