@@ -12,8 +12,9 @@ namespace MvcMatricula.Models
         [Column("Nombre_Materia")]
         public string NombreMateria {get;set;}
         [Column("Horas_Totales")]
-        public int Horas_Totales {get;set;}
+        public int HorasTotales {get;set;}
+        
         [Column("Borrado_Materia")]
-        public Int64 EstaBorrado {get;set;}
+        public bool EstaBorrado {get;set;} 
     }
 }
