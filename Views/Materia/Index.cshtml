@@ -5,7 +5,7 @@
 }
 
 <h1>Materias</h1>
-<a asp-action="AgregarOEditar" class="btn btn-outline-success"><i class="fas fa-lg"></i> Agregar</a>
+<hr />
 <table class="table table-hover">
     <thead>
     <tr>
@@ -17,6 +17,9 @@
         </th>
         <th>
             @Html.DisplayName( "Total de horas")
+        </th>
+        <th>
+            <a asp-action="AgregarOEditar" class="btn btn-outline-success"><i class="fas fa-plus-square"></i> Agregar</a>
         </th>
     </tr>
     </thead>
@@ -35,7 +38,7 @@
             </td>
             <td>
                 <a asp-action="AgregarOEditar" asp-route-id="@item.Id"><i class="fas fa-marker fa-lg"></i>Editar</a>
-                <a asp-action="Delete" asp-route-id="@item.Id" class="text-danger ml-1" onclick="return confirm('Are you sure to delete this record?')"><i class="fas fa-trash-alt fa-lg"></i>Borrar</a>
+                <a asp-action="Eliminar" asp-route-id="@item.Id" class="text-danger ml-1" onclick="return confirm('Are you sure to delete this record?')"><i class="fas fa-trash-alt fa-lg"></i>Borrar</a>
             </td>
         </tr>
     }

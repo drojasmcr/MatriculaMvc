@@ -39,6 +39,13 @@ namespace MvcMatricula.Controllers
             return View("Index",Repositorio.ObtenerMaterias().ToList());
         }
     
+        public  IActionResult Eliminar(int id)
+        {
 
+            Repositorio.EliminarMateria(id);
+            Repositorio.Commit();
+            return View("Index", Repositorio.ObtenerMaterias().ToList());
+   
+        }
     }
 }
