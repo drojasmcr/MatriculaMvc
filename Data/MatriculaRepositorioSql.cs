@@ -96,5 +96,47 @@ namespace MvcMatricula.Data
             }
             return estudiante;
         }
+
+        public IEnumerable<Profesor> ObtenerProfesores()
+        {
+            return db.Profesores;
+        }
+
+        public IEnumerable<Profesor> ObtenerProfesores(string nombre)
+        {
+            var profesores = from p in db.Profesores
+                    where p.Nombre.Contains(nombre) || string.IsNullOrEmpty(nombre)
+                    orderby nombre
+                    select p;
+            return profesores;
+        }
+
+        public Profesor ObtenerProfesor(int id)
+        {
+            return db.Profesores.Find(id);
+        }
+
+        public Profesor AgregarProfesor(Profesor profesor)
+        {
+            db.Add(profesor);
+            return profesor;
+        }
+
+        public Profesor ActualizarProfesor(Profesor profesor)
+        {
+            var entity = db.Profesores.Attach(profesor);
+            entity.State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            return profesor;
+        }
+
+        public Profesor EliminarProfesor(int id)
+        {
+            var profesor = ObtenerProfesor(id);
+            if (profesor != null)
+            {
+                db.Profesores.Remove(profesor);
+            }
+            return profesor;
+        }
     }
 }

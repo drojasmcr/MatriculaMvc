@@ -7,6 +7,7 @@ namespace MvcMatricula.Data
     {
         public DbSet<Materia> Materias {get;set;}
         public DbSet<Estudiante> Estudiantes {get;set;}
+        public DbSet<Profesor> Profesores {get;set;}
 
         public MatriculaDbContext(DbContextOptions<MatriculaDbContext> options)
         :base(options)
