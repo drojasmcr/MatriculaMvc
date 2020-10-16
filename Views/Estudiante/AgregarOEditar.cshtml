@@ -1,0 +1,44 @@
+@model Estudiante
+@{
+    
+}
+<h4>Agregar Estudiante</h4>
+
+<hr />
+
+<form asp-action="AgregarOEditar" method="POST">
+    <div class="form-group">
+        <label asp-for="Cedula">Cèdula</label>
+        <input asp-for=Cedula class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Nombre">Nombre</label>
+        <input asp-for=Nombre class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Apellido1">Apellido1</label>
+        <input asp-for=Apellido1 class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Apellido2">Apellido2</label>
+        <input asp-for=Apellido2 class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Telefono">Telèfono</label>
+        <input asp-for=Telefono class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Correo">Email</label>
+        <input asp-for=Correo class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="FechaIngreso">Fecha Ingreso</label>
+        <input asp-for=FechaIngreso class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Estado">Estado</label>
+        <input asp-for=Estado class="form-control" value="ACT" />
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+    <a asp-action="Index" class="btn btn-secondary btn-block"><i class="fas fa-table"></i>Regresar</a>
+</form>

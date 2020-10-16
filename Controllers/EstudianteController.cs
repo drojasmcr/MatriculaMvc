@@ -24,5 +24,28 @@ namespace MvcMatricula.Controllers
             IEnumerable<Estudiante> _estudiantes = Repositorio.ObtenerEstudiantes();
             return View(_estudiantes.ToList());
         }
+
+        public IActionResult AgregarOEditar(int id = 0) 
+        {
+            if ( id == 0 )
+                return View(new Estudiante());
+            return View( Repositorio.ObtenerEstudiante(id) );
+        }
+        [HttpPost]
+        public IActionResult AgregarOEditar(Estudiante model) 
+        {
+            Repositorio.AgregarEstudiante(model);
+            Repositorio.Commit();
+            return View("Index",Repositorio.ObtenerEstudiantes().ToList());
+        }
+    
+        public  IActionResult Eliminar(int id)
+        {
+
+            Repositorio.EliminarEstudiante(id);
+            Repositorio.Commit();
+            return View("Index", Repositorio.ObtenerEstudiantes().ToList());
+   
+        }
     }
 }

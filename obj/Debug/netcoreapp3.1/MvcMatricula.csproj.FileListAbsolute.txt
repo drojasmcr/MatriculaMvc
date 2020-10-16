@@ -80,3 +80,4 @@
 /Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/obj/Debug/netcoreapp3.1/Razor/Views/Materia/AgregarOEditar.cshtml.g.cs
 /Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/bin/Debug/netcoreapp3.1/libman.json
 /Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/obj/Debug/netcoreapp3.1/Razor/Views/Estudiante/Index.cshtml.g.cs
+/Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/obj/Debug/netcoreapp3.1/Razor/Views/Estudiante/AgregarOEditar.cshtml.g.cs
