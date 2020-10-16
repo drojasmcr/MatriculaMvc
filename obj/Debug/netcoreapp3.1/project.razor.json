@@ -14407,6 +14407,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/Views/Estudiante/Index.cshtml",
+      "TargetPath": "Views\\Estudiante\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/drojasm/repos/ASP.NET/Matricula/MvcMatricula/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
